@@ -19,9 +19,13 @@ mysql = MySQL(app)
 def main():
     return render_template('index.html')
 
-@app.route('/task_F1')
+@app.route('/task_F1', methods=['GET', 'POST'])
 def task_F1():
-    table_name = "orders"
+    if request.method == 'POST':
+        table_name = request.form.get('table_name')
+    else:
+        table_name = 'achievements'
+
     cur = mysql.connection.cursor()
     cur.execute(f"SELECT * FROM {table_name}")
     table = cur.fetchall()
@@ -29,10 +33,20 @@ def task_F1():
         if match:=re.search(r"^(id_.*)$", key):
             table_id = match.group(1)
 
+
     cur.execute('SHOW TABLES')
     all_tables = cur.fetchall()
     all_table_names = [list(tab.values())[0] for tab in all_tables]
-    # print(*all_table_names)
+
+    tables_to_remove = []
+    for n in all_table_names:
+        cur.execute(f"SHOW COLUMNS FROM {n}")
+        cols = cur.fetchall()
+        if all(re.search(r"^fk_.*",c['Field']) for c in cols):
+            print('worked')
+            tables_to_remove.append(n)
+
+    all_table_names = [n for n in all_table_names if n not in tables_to_remove]
 
     return render_template('task_F1.html', table=table, table_name=table_name, table_id=table_id, all_table_names=all_table_names)
 

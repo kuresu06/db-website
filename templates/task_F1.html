@@ -4,12 +4,17 @@
 
 {% block content %}
     <h1 style = "text-align: center;">Task F1</h1>
-    <h1 style = "text-align: center;">Table: {{table_name.capitalize()}}</h1>
-    <select>
-        {%for name in all_table_names%}
-        <option value="{{name}}">{{name.capitalize().replace("_", " ")}}</option>
-        {%endfor%}
-    </select>
+    <h1 style = "text-align: center;">Table: {{table_name.capitalize().replace("_", " ")}}</h1>
+    <div style="display: flex; justify-content: center;">
+        <form method="POST" action="{{ url_for('task_F1') }}">
+            <select name="table_name">
+                {% for name in all_table_names %}
+                <option value="{{ name }}" {% if name == table_name %} selected {% endif %}>{{ name.capitalize().replace("_", " ") }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Select">
+        </form>
+    </div>
     <table style="border-collapse: collapse; margin: auto;">
         {%if table%}
             <tr>
