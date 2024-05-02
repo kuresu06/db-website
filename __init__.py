@@ -10,16 +10,16 @@ def task_F1():
     return render_template('task_F1.html')
 
 @app.route('/task_F2')
-def task_F1():
-    return render_template('task_F1.html')
+def task_F2():
+    return render_template('task_F2.html')
 
 @app.route('/task_F3')
-def task_F1():
-    return render_template('task_F1.html')
+def task_F3():
+    return render_template('task_F3.html')
 
 @app.route('/task_F4')
-def task_F1():
-    return render_template('task_F1.html')
+def task_F4():
+    return render_template('task_F4.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

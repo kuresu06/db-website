@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{%block title%}{% endblock %}</title>
 </head>
 <body>
     <nav>
         <div class="taskbar">
-            <div class="brand"> (Mock) Digital games retailer </div>
+            <div class="brand">
+                <a href="{{url_for('main')}}">(Mock) Digital games retailer</a>
+            </div>
             <div class="links">
-                <a href="task_F1.html">Task F1</a>
-                <a href="task_F2.html">Task F2</a>
-                <a href="task_F3.html">Task F3</a>
-                <a href="task_F4.html">Task F4</a>
+                <a href="{{url_for('task_F1')}}">Task F1</a>
+                <a href="{{url_for('task_F2')}}">Task F2</a>
+                <a href="{{url_for('task_F3')}}">Task F3</a>
+                <a href="{{url_for('task_F4')}}">Task F4</a>
             </div>
         </div>
     </nav>
