@@ -19,7 +19,7 @@ mysql = MySQL(app)
 def main():
     return render_template('index.html')
 
-@app.route('/task_F1', methods=['GET', 'POST'])
+@app.route('/display', methods=['GET', 'POST'])
 def task_F1():
     if request.method == 'POST':
         table_name = request.form.get('table_name')
@@ -43,24 +43,11 @@ def task_F1():
         cur.execute(f"SHOW COLUMNS FROM {n}")
         cols = cur.fetchall()
         if all(re.search(r"^fk_.*",c['Field']) for c in cols):
-            print('worked')
             tables_to_remove.append(n)
 
     all_table_names = [n for n in all_table_names if n not in tables_to_remove]
 
-    return render_template('task_F1.html', table=table, table_name=table_name, table_id=table_id, all_table_names=all_table_names)
-
-@app.route('/task_F2')
-def task_F2():
-    return render_template('task_F2.html')
-
-@app.route('/task_F3')
-def task_F3():
-    return render_template('task_F3.html')
-
-@app.route('/task_F4')
-def task_F4():
-    return render_template('task_F4.html')
+    return render_template('display.html', table=table, table_name=table_name, table_id=table_id, all_table_names=all_table_names)
 
 @app.route('/delete_row/<table_name>/<table_id>/<row_id>', methods = ['POST'])
 def delete_row(table_name, table_id, row_id):

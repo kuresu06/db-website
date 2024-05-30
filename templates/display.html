@@ -3,7 +3,6 @@
 {% block title %}Task F1{% endblock %}
 
 {% block content %}
-    <h1 style = "text-align: center;">Task F1</h1>
     <h1 style = "text-align: center;">Table: {{table_name.capitalize().replace("_", " ")}}</h1>
     <div style="display: flex; justify-content: center;">
         <form method="POST" action="{{ url_for('task_F1') }}">

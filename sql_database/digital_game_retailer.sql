@@ -269,7 +269,6 @@ INSERT INTO `games` (`title`, `price`, `description`, `file_size`, `review_score
 ('Crystal Chronicles', 9, 'Build and manage your own virtual city', 152208, 91.82, 'http://dummyimage.com/126x100.png/ff4444/ffffff', '2023-11-18', 34, 'http://dummyimage.com/151x100.png/cc0000/ffffff', 3, 862, 631, 335),
 ('Galactic Conquest', 60, 'Uncover the dark secrets of a small town plagued by supernatural phenomena.', 427658, 23.96, 'http://dummyimage.com/223x100.png/ff4444/ffffff', '2023-08-26', 30, 'http://dummyimage.com/140x100.png/dddddd/000000', 1, 863, 69, 386),
 ('Dragon Quest', 40, 'Immerse yourself in a rich and immersive story filled with twists and turns.', 532749, 72.97, 'http://dummyimage.com/250x100.png/5fa2dd/ffffff', '2023-04-30', NULL, 'http://dummyimage.com/125x100.png/cc0000/ffffff', 3, 962, 109, 396),
-('Pirate\'s Plunder', 40, 'Travel through time and space to prevent a catastrophic event from destroying the universe.', 850610, 71.78, 'http://dummyimage.com/102x100.png/ff4444/ffffff', '2024-02-28', NULL, 'http://dummyimage.com/174x100.png/5fa2dd/ffffff', 4, 981, 59, 213);
 
 -- --------------------------------------------------------
 
@@ -682,7 +681,6 @@ INSERT INTO `users` (`username`, `password`, `email`, `avatar`, `biography`, `co
 ('hpaili', 'nY3)9XRO%', 'ptanti@nps.gov', 'http://dummyimage.com/143x100.png/ff4444/ffffff', 'DIY enthusiast and home decor aficionado. Always working on a new project.', 'China', 317, '2017-07-04', '1907-11-16', 166, 6412, 7276),
 ('gbolzenb', 'yK7%MSlU)n', 'kteulierb@cocolog-nifty.com', 'http://dummyimage.com/220x100.png/cc0000/ffffff', 'Fashionista and makeup enthusiast. Always experimenting with new looks.', 'Sweden', 701, '2016-08-03', '1984-02-11', 267, 321, 5681),
 ('lcattlow0', 'lH4?a#Bio?.L+B(p', 'ystirley0@go.com', 'http://dummyimage.com/228x100.png/5fa2dd/ffffff', 'Film buff and movie critic. Always up for a movie marathon.', 'Indonesia', 164, '2017-07-31', '1913-04-22', 492, 303, 8123),
-('wyuryev7', 'hN4>x<XPv77&Z<', 'tbarnewell7@java.com', 'http://dummyimage.com/129x100.png/5fa2dd/ffffff', 'don\'t shop!', 'Brazil', 743, '2023-01-26', '2023-01-13', 657, 8347, 9345),
 ('rboakef', 'gN5_`bVg', 'fmckeonf@thetimes.co.uk', 'http://dummyimage.com/240x100.png/cc0000/ffffff', 'Film buff and movie critic. Always up for a movie marathon.', 'Macedonia', 836, '2023-05-20', '1901-12-14', 1709, 4646, 6794),
 ('sdymidowiczc', 'kJ3/y3YzlGRAH', 'mmacguffiec@washington.edu', 'http://dummyimage.com/135x100.png/5fa2dd/ffffff', 'recycle!', 'Greece', 346, '2019-08-03', '1990-01-17', 2107, 2690, 7493),
 ('msully6', 'gN8@>uuF', 'uconnaughton6@skype.com', 'http://dummyimage.com/180x100.png/cc0000/ffffff', 'Coffee connoisseur and barista. Let me make you the perfect cup of coffee.', 'Sweden', 497, '2022-09-27', '1916-11-10', 2122, 9934, 7185),
@@ -694,11 +692,9 @@ INSERT INTO `users` (`username`, `password`, `email`, `avatar`, `biography`, `co
 ('dbockman2', 'lV1E$+f`J7a/', 'onaughton2@nature.com', 'http://dummyimage.com/104x100.png/5fa2dd/ffffff', 'DIY enthusiast and home decor aficionado. Always working on a new project.', 'Egypt', 466, '2016-05-15', '2006-04-06', 6980, 9520, 9732),
 ('mracineg', 'kD3/2c(oG%$Hb', 'lsmetoung@360.cn', 'http://dummyimage.com/248x100.png/dddddd/000000', 'Art lover and creative soul. Painting and drawing are my outlets.', 'Croatia', 626, '2018-11-28', '1989-05-04', 7244, 6641, 4863),
 ('rwalisiak8', 'sM4!Uz+<,', 'estuffins8@kickstarter.com', 'http://dummyimage.com/210x100.png/5fa2dd/ffffff', 'Fashionista and makeup enthusiast. Always experimenting with new looks.', 'Zimbabwe', 749, '2017-02-03', '2012-05-27', 7246, 5572, 2017),
-('sriseborougha', 'pZ0\'eb<Ng2(&0k', 'wauberta@marriott.com', 'http://dummyimage.com/171x100.png/ff4444/ffffff', 'Musician and singer-songwriter. Performing at local gigs and open mics.', 'China', 25, '2023-07-24', '1934-08-22', 7406, 820, 6372),
 ('sodoghesty1', 'mB2!r7>MP.3H', 'bbridson1@epa.gov', 'http://dummyimage.com/134x100.png/dddddd/000000', 'Fitness coach and personal trainer. Helping others reach their goals.', 'Chile', 743, '2020-02-06', '1909-08-17', 7673, 2756, 3638),
 ('mlundbechh', 'hB7/0PZe\"eWnWR=', 'mdansonh@aol.com', 'http://dummyimage.com/245x100.png/5fa2dd/ffffff', 'Film buff and movie critic. Always up for a movie marathon.', 'South Korea', 674, '2017-06-23', '1993-12-30', 7723, 4902, 2687),
 ('rhayer5', 'fK7&}9!3oZ', 'arikel5@studiopress.com', 'http://dummyimage.com/238x100.png/5fa2dd/ffffff', 'Coffee connoisseur and barista. Let me make you the perfect cup of coffee.', 'Indonesia', 198, '2015-10-16', '1921-06-24', 9068, 6380, 8628),
-('ffranciottoij', 'jW3\'TmgrPdE', 'jpoppingj@cam.ac.uk', 'http://dummyimage.com/201x100.png/5fa2dd/ffffff', 'Outdoor enthusiast and nature lover. Hiking and camping are my favorite pastimes.', 'France', 64, '2015-09-20', '1947-06-27', 9913, 6768, 971);
 
 -- --------------------------------------------------------
 
